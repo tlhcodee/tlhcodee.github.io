@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha Öztürk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="arif.png" alt="Github Profile Picture">
+            <h1>Talha Öztürk</h1>
+            <h2>Tiyatro ve programlama bağımlısı bir genç :D</h2>
+
+            <div class="profile-info">
+                <h1>Ben Kimim?</h1>
+                <p>Selamlar! Ben Talha, 18 yaşında yazılım ve tiyatroya ilgi duyan biriyim</p>
+                <p>2021 yılından bu yana programlama alanında ciddi gelişme kat ettim.</p>
+
+                <h1>Bildiğim Kodlama Dilleri</h1>
+                <p>Java, C#, Python, Html ve CSS gibi alanlarda tecrübelere sahibim.</p>
+                <p>Networking üzerine çalışmalar yapıyorum.</p>
+
+                <h1>Mevcut Projelerim</h1>
+                <p>PvPCentral - Minecraft PvP Sunucusu - Java Geliştiricisi</p>
+                <p>RenasMC - Minecraft PvP Sunucusu - Java Geliştiricisi</p>
+                <p>Flow Client - Minecraft Hile - Sahip/Java Geliştiricisi</p>
+
+                <h1>Geçmiş Projelerim</h1>
+                <p>Sadder.cc - Canada bazlı PvP Sunucusu - Java Geliştiricisi</p>
+                <p>valent.gg - İsveç bazlı PvP Sunucusu - Moderator/Head Admin</p>
+                <p>Railed.rip - Amerika bazlı PvP Sunucusu - Trial-Mod</p>
+
+                <h1>Hakkımda daha enteresan bilgiler</h1>
+                <p>İngilizce'de ve Oyunculukta çok iyiyim :D</p>
+                <div class="komikanlar">
+                    <h1>Bazı komik kliplerim :D</h1>
+                    <ul>
+                        <li>
+                            <a href="https://medal.tv/tr/games/minecraft/clips/1zKKam8_7OFpjO/7MnHBD32HTsu?invite=cr-MSxXc3QsMjAwOTgyMTY1LA">Arap kıza yavşamaca</a>
+                            <a href="https://medal.tv/tr/games/minecraft/clips/1A4RF7xUstHqQY/HHqyD8XcyUxn?invite=cr-MSxub28sMjAwOTgyMTY1LA">Yabancı kız bana küfür ediyor</a>
+                            <a href="https://medal.tv/tr/games/minecraft/clips/1DL0nX7BnO5Pzk/IqVesPpou1m3?invite=cr-MSxYa0MsMjAwOTgyMTY1LA">Yabancılara namaz kılmayı öğretiyoruz</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <h1>Bana Ulaşmak için:</h1>
+                <div class="socials">
+                    <a href="https://www.instagram.com/talhacode/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCR-NDv32Ev2C4kCLrkFMdYg" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const container = document.querySelector(".container");
+
+        container.addEventListener("mousemove", e => {
+            const rect = container.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            container.style.setProperty("--x", `${x}px`);
+            container.style.setProperty("--y", `${y}px`);
+        });
+    </script>
+</body>
+</html>
